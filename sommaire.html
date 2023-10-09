@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="idPage">Admopédia</title>
+        <script>
+            function activePage(page, title){
+                let iframe = document.getElementById("iframe")
+                let ref = document.getElementById("ref")
+                iframe.src = page
+                ref.textContent = title
+                document.title = title
+            }
+        </script>
+    </head>
+    <body>
+        <div class="flex flex-row global">
+            <div class="flex flex-col menu" oncontextmenu="return false;" onselectstart="return false;">
+                <h3>Sommaire</h3>
+                
+        <button onclick='activePage("admopedia-all.html","Admopedia")'>Admopedia</button>
+        
+        <button onclick='activePage("admopedia-simple.html","Admopedia-simple")'>Admopedia-simple</button>
+        
+        <button onclick='activePage("evolutions.html","Evolutions")'>Evolutions</button>
+        
+        <button onclick='activePage("personnages.html","Personnages")'>Personnages</button>
+        
+        <button onclick='activePage("zones.html","Zones")'>Zones</button>
+        
+        <button onclick='activePage("objets.html","Objets")'>Objets</button>
+        
+            <button onclick='activePage("crafting.html","Crafting")'>Crafting</button>
+            </div>
+            <div class="flex frame">
+                <div class="flex refTitle">
+                    <h3 id="ref">Sommaire</h3>
+                </div>
+                <iframe frameborder="0" style="overflow:hidden;height:100%;width:100%" id="iframe" width="700" height="500"></iframe>
+            </div>
+        </div>
+    </body>
+    </html>
+    <style>
+        .flex {
+            display: flex !important;
+        }
+        .flex-col {
+            flex-direction: column !important;
+        }
+        .flex-row {
+            flex-direction: row !important;
+        }
+        .menu {
+            position: relative;
+            width: 0.2rem;
+            background-color: lightblue;
+            height: 100%;
+        }
+        .menu:hover {
+            width: 10rem;
+            height: 100%;
+        }
+        .menu:hover > *{
+            display: initial;
+        }
+        .menu > *{
+            display: none;
+        }
+        .global {
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+        }
+        .frame {
+            background-color: lightskyblue;
+            position: relative;
+            width: 100%;
+            height : 100%;
+        }
+        button {
+            margin: 1rem 1rem 0 1rem;
+            border-radius: 25px;
+            background-color: white;
+            min-height: 3rem;
+        }
+        button:hover {
+            background-color:lightskyblue;
+            cursor: pointer;
+        }
+        h3 {
+            text-align:center;
+        }
+        .refTitle {
+            writing-mode : vertical-lr;
+            transform: rotate(180deg);
+            height : 100%;
+            align-items:center;
+            justify-content:center;
+            width: 3%;
+            background-color: grey;
+            position: relative;
+            top: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+    

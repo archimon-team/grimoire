@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crafting</title>
+    </head>
+    <body>
+        <span>5 éléments</span>
+        <div id="manager">
+            <table>
+                <tr>
+					<th>Ressource1</th>
+					<th>Nb1</th>
+					<th>Ressource2</th>
+					<th>Nb2</th>
+					<th>Ressource3</th>
+					<th>Nb3</th>
+					<th>Résultat</th>
+				</tr>
+				<tr class='odd'>
+					<td id='Gourde'>Gourde</td>
+					<td id='1'>1</td>
+					<td id='Feuille de dictame'>Feuille de dictame</td>
+					<td id='1'>1</td>
+					<td></td>
+					<td></td>
+					<td id='Dictame'>Dictame</td>
+				</tr>
+				<tr class='even'>
+					<td id='Pomme verte'>Pomme verte</td>
+					<td id='2'>2</td>
+					<td id='Bouteille d'alcool'>Bouteille d'alcool</td>
+					<td id='1'>1</td>
+					<td id='Dictame'>Dictame</td>
+					<td id='2'>2</td>
+					<td id='Poudre musculaire'>Poudre musculaire</td>
+				</tr>
+				<tr class='odd'>
+					<td id='Gourde'>Gourde</td>
+					<td id='3'>3</td>
+					<td id='Bouteille d'alcool'>Bouteille d'alcool</td>
+					<td id='3'>3</td>
+					<td></td>
+					<td></td>
+					<td id='Eau bénite'>Eau bénite</td>
+				</tr>
+				<tr class='even'>
+					<td id='Eau bénite'>Eau bénite</td>
+					<td id='5'>5</td>
+					<td id='Poudre musculaire'>Poudre musculaire</td>
+					<td id='10'>10</td>
+					<td></td>
+					<td></td>
+					<td id='Apaisant'>Apaisant</td>
+				</tr>
+				<tr class='odd'>
+					<td id='Apaisant'>Apaisant</td>
+					<td id='3'>3</td>
+					<td id='Eau bénite'>Eau bénite</td>
+					<td id='5'>5</td>
+					<td id='Huile énergétique'>Huile énergétique</td>
+					<td id='5'>5</td>
+					<td id='Remède ultime'>Remède ultime</td>
+				</tr>
+
+            </table>
+        </div>
+    </body>
+</html>
+<style>
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+        position: relative;
+    }
+    th {
+        position: sticky;
+        background-color: white;
+        top: 0;
+        height: 3rem;
+    }
+    th, td {
+      border: none;
+      border-bottom: 1px solid black;
+      text-align: center;
+      min-width: 4rem;
+    }
+    #manager{
+        max-height: 520px;
+        overflow: auto;
+    }
+    .odd {
+        background-color:grey;
+    }
+    .even {
+        background-color:white;
+    }
+    span.exp {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding : 0 0.3rem;
+    }
+    span.speed {
+        background-color: green;
+    }
+    span.legendary {
+        background-color: red;
+    }
+    span.common {
+        background-color: yellow;
+    }
+    span.power {
+        background-color: orange;
+    }
+</style>
+    
