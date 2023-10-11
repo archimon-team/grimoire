@@ -146,8 +146,8 @@
 					<td></td>
 				</tr>
 				<tr class='odd'>
-					<td id="Corbandit"><img src='admons/Corbandit.png' width='50' height='50'/>Corbandit</td>
-					<td id="Corbrigand"><img src='admons/Corbrigand.png' width='50' height='50'/>Corbrigand</td>
+					<td id="Corbandit"><div class='flex flex-col'><img src='admons/Corbandit.png' width='50' height='50'/>Corbandit</div></td>
+					<td id="Corbrigand"><div class='flex flex-col'><img src='admons/Corbrigand.png' width='50' height='50'/>Corbrigand</div></td>
 					<td id="25">25</td>
 					<td></td>
 					<td></td>
@@ -155,8 +155,8 @@
 					<td></td>
 				</tr>
 				<tr class='even'>
-					<td id="Corbrigand"><img src='admons/Corbrigand.png' width='50' height='50'/>Corbrigand</td>
-					<td id="Corbachef"><img src='admons/Corbachef.png' width='50' height='50'/>Corbachef</td>
+					<td id="Corbrigand"><div class='flex flex-col'><img src='admons/Corbrigand.png' width='50' height='50'/>Corbrigand</div></td>
+					<td id="Corbachef"><div class='flex flex-col'><img src='admons/Corbachef.png' width='50' height='50'/>Corbachef</div></td>
 					<td id="50">50</td>
 					<td></td>
 					<td></td>
@@ -1112,6 +1112,12 @@
       border-bottom: 1px solid black;
       text-align: center;
       min-width: 4rem;
+    }
+    .flex {
+        display: flex !important;
+    }
+    .flex-col {
+        flex-direction: column !important;
     }
     #manager{
         max-height: 520px;
