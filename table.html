@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table des types</title>
+    </head>
+    <body onselectstart="return false;" oncontextmenu="return false;">
+        <span>14 éléments</span>
+        <div id="manager">
+            <table>
+                <tr>
+					<th>Attaque-Defense     Eau     Terre   Feu     Air        Fantôme     Dragon      Métal       Magie       Glace       Poison      Foudre      Poing       Basique      Néant</th>
+				</tr>
+				<tr class='odd'>
+					<td>Eau                 0.5     2       0.5     1           1           1           1           1           1           1           2           1           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Terre               0.5     0.5     1       2           1           1           2           1           1           0.5         0           2           1           2</td>
+				</tr>
+				<tr class='odd'>
+					<td>Feu                 2       1       0.5     0.5         1           1           0.5         1           0.5         1           1           1           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Air                 1       0.5     2       0.5         1           2           1           0.5         2           0.5         2           0.5         1           2</td>
+				</tr>
+				<tr class='odd'>
+					<td>Fantôme             0.5     0       1       2           0.5         0.5         1           2           1           0           1           0           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Dragon              1       1       1       1           0.5         0.5         0.5         2           2           2           2           0.5         1           2</td>
+				</tr>
+				<tr class='odd'>
+					<td>Métal               2       0.5     2       1           2           2           0.5         0.5         0.5         0           0           2           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Magie               2       2       1       1           0.5         0.5         1           0.5         1           2           1           0.5         1           2</td>
+				</tr>
+				<tr class='odd'>
+					<td>Glace               1       1       2       0.5         1           2           2           1           0.5         1           0.5         2           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Poison              1       1       0.5     2           1           1           1           0.5         2           0.5         0.5         0           1           2</td>
+				</tr>
+				<tr class='odd'>
+					<td>Foudre              0.5     2       0.5     0.5         0           1           2           1           0.5         0.5         0.5         1           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Poing               1       0.5     1       2           2           1           0.5         2           1           2           1           0.5         1           0</td>
+				</tr>
+				<tr class='odd'>
+					<td>Basique             1       1       1       1           1           1           1           1           1           1           1           1           1           2</td>
+				</tr>
+				<tr class='even'>
+					<td>Néant               0       0       0       0           0           0           0           0           0           0           0           2           2           </td>
+				</tr>
+
+            </table>
+        </div>
+    </body>
+</html>
+<style>
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+        position: relative;
+        width: 100%;
+    }
+    th {
+        position: sticky;
+        background-color: white;
+        top: 0;
+        height: 3rem;
+    }
+    th, td {
+      border: none;
+      border-bottom: 1px solid black;
+      text-align: center;
+      min-width: 4rem;
+    }
+    .flex {
+        display: flex !important;
+    }
+    .flex-col {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    #manager{
+        max-height: 520px;
+        overflow: auto;
+    }
+    .odd {
+        background-color:grey;
+    }
+    .even {
+        background-color:white;
+    }
+    span.exp {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding : 0 0.3rem;
+    }
+    span.quick {
+        background-color: green;
+    }
+    span.legendary {
+        background-color: red;
+    }
+    span.common {
+        background-color: yellow;
+    }
+    span.power {
+        background-color: orange;
+    }
+    span.stats {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding : 0 0.3rem;
+    }
+    span.hp {
+        background-color : lightgreen;
+    }
+    span.speed {
+        background-color : lightgrey;
+    }
+    span.atk {
+        background-color : red;
+    }
+    span.atk_spe {
+        background-color : purple;
+    }
+    span.def {
+        background-color : orange;
+    }
+    span.def_spe {
+        background-color : yellow;
+    }
+</style>
+    
