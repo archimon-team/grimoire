@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capacité</title>
+    </head>
+    <body onselectstart="return false;" oncontextmenu="return false;">
+        <span>27 éléments</span>
+        <div id="manager">
+            <table>
+                <tr>
+					<th>Catégorie</th>
+					<th>Nom</th>
+					<th>Type</th>
+					<th>Statut</th>
+					<th>Priorité</th>
+					<th>Puissance</th>
+					<th>Contrecoup</th>
+					<th>Pivot</th>
+					<th>Trap</th>
+					<th>Drain</th>
+					<th>Coût de mana</th>
+					<th>Label</th>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Toile gluante">Toile gluante</td>
+					<td id="Poison"><img src='types/Poison.png' width='50' height='50'/></td>
+					<td id="Empoisonnement">Empoisonnement</td>
+					<td></td>
+					<td id="30">30</td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Lance une toile gluante sur l'ennemi. Peut l'empoisonner.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Spécial">Spécial</td>
+					<td id="Jet d'O">Jet d'O</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="30">30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Lance un jet d'eau sur l'adversaire.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Physique">Physique</td>
+					<td id="Aqua-Jet">Aqua-Jet</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td></td>
+					<td id="1">1</td>
+					<td id="40">40</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Le lanceur fonce sur l'ennemi si rapidement qu'on parvient à peine à le discerner. Frappe en priorité.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Griffe">Griffe</td>
+					<td id="Basique">Basique</td>
+					<td></td>
+					<td></td>
+					<td id="30">30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Attaque l'ennemi à coup de griffes.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Physique">Physique</td>
+					<td id="Tobo'gliss">Tobo'gliss</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="40">40</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Lance une vague d'eau pour faire glisser la cible.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Flac d'O">Flac d'O</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="60">60</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>Le lanceur projette une flaque d'eau sur l'ennemi.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Physique">Physique</td>
+					<td id="Griff d'O">Griff d'O</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td id="Arrosement">Arrosement</td>
+					<td id="1">1</td>
+					<td id="75">75</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>Lance des répliques d'eau de ses griffes pour attaquer sa cible. Arrose l'ennemi.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Aquatacle">Aquatacle</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td></td>
+					<td id="1">1</td>
+					<td id="85">85</td>
+					<td id="0.2">0.2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>Utilise ses pattes arrières pour noyer l'ennemi.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Ombre portée">Ombre portée</td>
+					<td id="Fantôme"><img src='types/Fantôme.png' width='50' height='50'/></td>
+					<td></td>
+					<td id="1">1</td>
+					<td id="60">60</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>Projette son ombre sur l'ennemi. Attaque en priorité.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Flamboiement">Flamboiement</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td id="Brûlure">Brûlure</td>
+					<td></td>
+					<td id="40">40</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Propulse des petites flammes sur l'ennemi. Peut brûler l'ennemi.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Crache-feu">Crache-feu</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td></td>
+					<td id="1">1</td>
+					<td id="60">60</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Crache des gerbes de flammes sur l'adversaire. Prioritaire.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Spécial">Spécial</td>
+					<td>Langue de feu</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td id="Brûlure">Brûlure</td>
+					<td></td>
+					<td id="70">70</td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Une langue de flamme entoure l'adversaire.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Physique">Physique</td>
+					<td id="Crocs enflammés">Crocs enflammés</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="75">75</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>Le lanceur inflige une morsure enflammée.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Spécial">Spécial</td>
+					<td>Boule de feu</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td id="Brûlure">Brûlure</td>
+					<td></td>
+					<td id="80">80</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>L'ennemi reçoit un torrent de flammes. Peut aussi le brûler.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Feu infernal">Feu infernal</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td id="Brûlure">Brûlure</td>
+					<td></td>
+					<td id="85">85</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="2">2</td>
+					<td>Projette un feu d'une chaleur similaire à celle de l'enfer. Peut brûler l'ennemi.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Incendio">Incendio</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="90">90</td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Créé un incendie autour de l'adversaire.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Furie flammes">Furie flammes</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td></td>
+					<td id="1">1</td>
+					<td id="95">95</td>
+					<td id="0.2">0.2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Lance des flammes de colère intenses sur la cible.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Pyro-lame">Pyro-lame</td>
+					<td id="Feu"><img src='types/Feu.png' width='50' height='50'/></td>
+					<td id="Brûlure">Brûlure</td>
+					<td></td>
+					<td id="100">100</td>
+					<td id="0.2">0.2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Attaque la cible avec un feu sous la forme d'une épée brûlante.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Demi-tour">Demi-tour</td>
+					<td id="Fantôme"><img src='types/Fantôme.png' width='50' height='50'/></td>
+					<td></td>
+					<td id="1">1</td>
+					<td id="80">80</td>
+					<td></td>
+					<td id="1">1</td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td>Attaque l'ennemi puis revient dans l'équipe pour être changé par l'allié suivant.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Spécial">Spécial</td>
+					<td id="Foudre noire">Foudre noire</td>
+					<td id="Fantôme"><img src='types/Fantôme.png' width='50' height='50'/></td>
+					<td id="Paralysie">Paralysie</td>
+					<td></td>
+					<td id="100">100</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="4">4</td>
+					<td>Une foudre obscure frappe l'ennemi, pouvant le paralyser.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Eclosion florale">Eclosion florale</td>
+					<td id="Terre"><img src='types/Terre.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="75">75</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Le lanceur projette une sphère de pétale vers la cible lui infligeant ainsi des dégâts.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td>Lame de glace</td>
+					<td id="Glace"><img src='types/Glace.png' width='50' height='50'/></td>
+					<td id="Gelure">Gelure</td>
+					<td></td>
+					<td id="80">80</td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Une lame de glace vient percuter et geler l'ennemi.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Blizzard étheré">Blizzard étheré</td>
+					<td id="Glace"><img src='types/Glace.png' width='50' height='50'/></td>
+					<td id="Gelure">Gelure</td>
+					<td></td>
+					<td id="100">100</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="5">5</td>
+					<td>Un blizzard ancestral survient pour geler l'ennemi.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Physique">Physique</td>
+					<td id="Electrogriffe">Electrogriffe</td>
+					<td id="Foudre"><img src='types/Foudre.png' width='50' height='50'/></td>
+					<td id="Paralysie">Paralysie</td>
+					<td id="1">1</td>
+					<td id="85">85</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Donne un coup de poing si rapide, que l'adversaire peut en être paralysé. Prioritaire.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Spécial">Spécial</td>
+					<td id="Tir fulgurant">Tir fulgurant</td>
+					<td id="Foudre"><img src='types/Foudre.png' width='50' height='50'/></td>
+					<td id="Paralysie">Paralysie</td>
+					<td></td>
+					<td id="100">100</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="5">5</td>
+					<td>Une flèche hautement chargée s'envole depuis l'arc du lanceur pour infliger un maximum d'impact à la cible. Peut paralyser.</td>
+				</tr>
+				<tr class='even'>
+					<td id="Spécial">Spécial</td>
+					<td>Prise des abysses</td>
+					<td id="Eau"><img src='types/Eau.png' width='50' height='50'/></td>
+					<td></td>
+					<td></td>
+					<td id="90">90</td>
+					<td></td>
+					<td></td>
+					<td id="1">1</td>
+					<td></td>
+					<td id="3">3</td>
+					<td>La cible est entrainée sous l'eau a une vitesse prodigieuse, empêchant tout mouvement.</td>
+				</tr>
+				<tr class='odd'>
+					<td id="Physique">Physique</td>
+					<td id="Poing d'ombre">Poing d'ombre</td>
+					<td id="Fantôme"><img src='types/Fantôme.png' width='50' height='50'/></td>
+					<td id="Malédiction">Malédiction</td>
+					<td></td>
+					<td id="90">90</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td id="3">3</td>
+					<td>Invoque un poing spectral qui inflige une malédiction à l'ennemi.</td>
+				</tr>
+
+            </table>
+        </div>
+    </body>
+</html>
+<style>
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+        position: relative;
+        width: 100%;
+    }
+    th {
+        position: sticky;
+        background-color: white;
+        top: 0;
+        height: 3rem;
+    }
+    th, td {
+      border: none;
+      border-bottom: 1px solid black;
+      text-align: center;
+      min-width: 4rem;
+    }
+    .flex {
+        display: flex !important;
+    }
+    .flex-col {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    #manager{
+        max-height: 520px;
+        overflow: auto;
+    }
+    .odd {
+        background-color:grey;
+    }
+    .even {
+        background-color:white;
+    }
+    span.exp {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding : 0 0.3rem;
+    }
+    span.quick {
+        background-color: green;
+    }
+    span.legendary {
+        background-color: red;
+    }
+    span.common {
+        background-color: yellow;
+    }
+    span.power {
+        background-color: orange;
+    }
+    span.stats {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding : 0 0.3rem;
+    }
+    span.hp {
+        background-color : lightgreen;
+    }
+    span.speed {
+        background-color : lightgrey;
+    }
+    span.atk {
+        background-color : red;
+    }
+    span.atk_spe {
+        background-color : purple;
+    }
+    span.def {
+        background-color : orange;
+    }
+    span.def_spe {
+        background-color : yellow;
+    }
+</style>
+    
