@@ -614,12 +614,232 @@ const model = [
 	]
 },
 {
+	dresseur: 'Innocent IV',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
 	dresseur: 'Orionis',
 	teams: [
 		{
 			name: 'Team1',
 			admons: [
 				{'name': 'Obsidarque', 'level': 1, 'types': ['Magie', 'Ombre']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Bételgeuse',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Rigel',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Saïph',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Bellatrix',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Cygnus',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Sadr',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Albireo',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Deneb',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Chi',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Bala',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Mira',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Menkar',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Baten',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Kaitos',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Aquilae',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Altaïr',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Sâhin',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Reda',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
+			]
+		}
+	]
+},
+{
+	dresseur: 'Erûla',
+	teams: [
+		{
+			name: 'Team',
+			admons: [
+				{'name': None, 'level': 1, 'types': ['']}
 			]
 		}
 	]
