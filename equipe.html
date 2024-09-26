@@ -45,6 +45,9 @@
                         let resume = document.createElement("span");
                         let strong = document.createElement("strong");
                         let objectPicture = document.createElement("object");
+                        let infoBulle = document.createElement("div");
+                        infoBulle.classList.add("infobulle");
+
                         objectPicture.data=`./admons/${admon.name}.png`
                         let picture = document.createElement("img");
                         objectPicture.appendChild(picture);
@@ -55,6 +58,7 @@
                         picture.classList.add("imgAdmon");
                         let types = document.createElement("div");
                         types.classList.add("flex-row");
+                        infoBulle.appendChild(objectPicture);
                         for (let type of admon.types) {
                             let divType = document.createElement("div");
                             let pictype = document.createElement("img");
@@ -71,6 +75,7 @@
                         container.appendChild(resume)
                         container.appendChild(objectPicture)
                         container.appendChild(types)
+                        container.appendChild(infoBulle)
                         tdDivAdmons.appendChild(container)
                     }
                     tdAdmons.appendChild(tdDivAdmons);
