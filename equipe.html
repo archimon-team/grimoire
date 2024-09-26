@@ -71,7 +71,7 @@
                         strong.textContent = " n°" + admon.level
                         resume.append(admon.name);
                         resume.appendChild(strong);
-                        container.classList.add("flex")
+                        container.classList.add("flex", "container")
                         container.appendChild(resume)
                         container.appendChild(objectPicture)
                         container.appendChild(types)
@@ -104,7 +104,7 @@
         left: 0;
     }
 
-    .grid:hover .infobulle {
+    .container:hover .infobulle {
         display: flex;
     }
 
