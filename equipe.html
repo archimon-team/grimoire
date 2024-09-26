@@ -35,6 +35,11 @@
                     let tdAdmons = document.createElement("td");
                     let tdDivAdmons = document.createElement("div");
                     tdDivAdmons.classList.add("grid")
+                    if (equipe.admons.length == 0) {
+                        let no = document.createElement("span");
+                        no.textContent = "Aucun admon";
+                        tdDivAdmons.appendChild(no);
+                    }
                     for (let admon of equipe.admons) {
                         let container = document.createElement("div");
                         let resume = document.createElement("span");
