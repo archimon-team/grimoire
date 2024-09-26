@@ -59,7 +59,6 @@
                         let types = document.createElement("div");
                         types.classList.add("flex-row");
                         let clone = objectPicture.cloneNode(true);
-                        clone.width="200";
                         infoBulle.appendChild(clone);
                         for (let type of admon.types) {
                             let divType = document.createElement("div");
@@ -105,8 +104,11 @@
         top: 0;
         left: 0;
     }
-    .infobulle object {
+    .infobulle img {
         width: 500px;
+    }
+    .infobulle object {
+        width: 100px;
     }
     .container {
         position: relative;
