@@ -619,7 +619,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -641,7 +641,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -652,7 +652,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -663,7 +663,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -674,7 +674,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -685,7 +685,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -696,7 +696,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -707,7 +707,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -718,7 +718,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -729,7 +729,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -740,7 +740,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -751,7 +751,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -762,7 +762,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -773,7 +773,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -784,7 +784,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -795,7 +795,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -806,7 +806,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -817,7 +817,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -828,7 +828,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
@@ -839,7 +839,7 @@ const model = [
 		{
 			name: 'Team',
 			admons: [
-				{'name': None, 'level': 1, 'types': ['']}
+				{'name': '', 'level': 0, 'types': ''}
 			]
 		}
 	]
