@@ -97,6 +97,17 @@
 
 </html>
 <style>
+    .infobulle {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .grid:hover .infobulle {
+        display: flex;
+    }
+
     h1 {
         text-align: center;
         position: fixed;
@@ -114,6 +125,7 @@
         column-gap: 2rem;
         row-gap: 1rem;
         padding: 0.5rem;
+        position: relative;
     }
 
     img.imgAdmon {
