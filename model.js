@@ -612,15 +612,4 @@ const model = [
 			]
 		}
 	]
-},
-{
-	dresseur: 'Orionis',
-	teams: [
-		{
-			name: 'Team1',
-			admons: [
-				{'name': 'Obsidarque', 'level': 1, 'types': ['Magie', 'Ombre']}
-			]
-		}
-	]
 }];
