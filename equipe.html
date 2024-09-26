@@ -58,7 +58,7 @@
                         picture.classList.add("imgAdmon");
                         let types = document.createElement("div");
                         types.classList.add("flex-row");
-                        infoBulle.appendChild(objectPicture);
+                        infoBulle.appendChild(objectPicture.cloneNode(true));
                         for (let type of admon.types) {
                             let divType = document.createElement("div");
                             let pictype = document.createElement("img");
