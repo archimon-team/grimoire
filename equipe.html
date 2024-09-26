@@ -1,0 +1,158 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue équipes</title>
+    <script src="model.js"></script>
+    <script>
+        function initTable() {
+            let table = document.createElement("table");
+            document.body.appendChild(table);
+            for (i = 0; i < model.length; i++) {
+                const team = model[i];
+                let trDresseur = document.createElement("tr");
+                let thDresseur = document.createElement("th");
+                let spanDresseur = document.createElement("span");
+                let imgDresseur = document.createElement("img");
+                spanDresseur.textContent = team.dresseur;
+                imgDresseur.src = `./admopedia/personnages/${team.dresseur}.png`
+                imgDresseur.classList.add("imgDresseur")
+                thDresseur.appendChild(imgDresseur)
+                thDresseur.appendChild(document.createElement("br"))
+                thDresseur.appendChild(spanDresseur)
+                thDresseur.colSpan = "2";
+                thDresseur.id = team.dresseur;
+                trDresseur.appendChild(thDresseur);
+                table.appendChild(trDresseur);
+                for (let equipe of team.teams) {
+                    let trAdmons = document.createElement("tr");
+                    let tdEquipe = document.createElement("td");
+                    tdEquipe.textContent = equipe.name;
+                    let tdAdmons = document.createElement("td");
+                    let tdDivAdmons = document.createElement("div");
+                    tdDivAdmons.classList.add("grid")
+                    for (let admon of equipe.admons) {
+                        let container = document.createElement("div");
+                        let resume = document.createElement("span");
+                        let strong = document.createElement("strong");
+                        let objectPicture = document.createElement("object");
+                        objectPicture.data=`./admopedia/admons/${admon.name}.png`
+                        let picture = document.createElement("img");
+                        objectPicture.appendChild(picture);
+                        objectPicture.type="image/png";
+                        objectPicture.width = "50";
+                        picture.src = "./admopedia/admons/notFound.png";
+                        objectPicture.classList.add("imgAdmon");
+                        picture.classList.add("imgAdmon");
+                        let types = document.createElement("div");
+                        types.classList.add("flex-row");
+                        for (let type of admon.types) {
+                            let divType = document.createElement("div");
+                            let pictype = document.createElement("img");
+                            pictype.classList.add("imgType");
+                            pictype.src = `./admopedia/types/${type}.png`;
+                            divType.appendChild(pictype);
+                            types.appendChild(divType);
+                        }
+
+                        strong.textContent = " n°" + admon.LEVEL
+                        resume.append(admon.name);
+                        resume.appendChild(strong);
+                        container.classList.add("flex")
+                        container.appendChild(resume)
+                        container.appendChild(objectPicture)
+                        container.appendChild(types)
+                        tdDivAdmons.appendChild(container)
+                    }
+                    tdAdmons.appendChild(tdDivAdmons);
+                    trAdmons.appendChild(tdEquipe);
+                    trAdmons.appendChild(tdAdmons);
+                    table.appendChild(trAdmons);
+                }
+            }
+        }
+        window.onload = function () {
+            initTable();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Personnages et équipes</h1>
+</body>
+
+</html>
+<style>
+    h1 {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        height: 7vmin;
+        background: white;
+        top: 0;
+        margin-top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+        row-gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    img.imgAdmon {
+        width: 50px;
+    }
+
+    img.imgType {
+        width: 30px;
+    }
+    img.imgDresseur {
+        width: 100px;
+    }
+
+    table,
+    td,
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        top: 7vmin;
+        position: absolute;
+        left: 12.5%;
+        width: 75%;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 1rem;
+        background-color: bisque;
+    }
+
+    .flex-row {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+</style>
+    
